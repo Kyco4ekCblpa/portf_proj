@@ -1,0 +1,90 @@
+.about-me {
+    .title_fz16 {
+        margin: 6px 0;
+
+        padding-left: 12px;
+        position: relative;
+
+        @include before_circle;
+    }
+
+    padding-top: 70px;
+
+    &__wrapper {
+        display: grid;
+        grid-column-gap: 70px;
+        grid-row-gap: 40px;
+
+        width: 100%;
+
+        grid-template: 243px 317px / 400px 570px;
+
+    }
+
+    &__img {
+        grid-row: 1 / 3;
+    }
+
+    &__divider {
+        margin-bottom: 15px;
+
+        height: 3px;
+        width: 60px;
+
+        background-color: $main-color;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+.task-types {
+    display: grid;
+    grid-template: 116px 116px / 260px 260px;
+    grid-column-gap: 50px;
+    grid-row-gap: 40px;
+
+    &__item {
+        display: flex;
+    }
+
+    &__img-wrapper {
+        position: relative;
+
+        height: 25px;
+        width: 24px;
+        margin-right: 40px;
+
+        transform: translateY(10px);
+
+        @include before_circle;
+    }
+
+    &__img {
+        margin: 0 auto;
+        display: block;
+
+        transform: translate3d(15px, 6px, 0px);
+    }
+
+    &__wrapper {
+        width: 200px;
+    }
+
+    &__title {
+        margin-bottom: 6px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    &__descr {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
