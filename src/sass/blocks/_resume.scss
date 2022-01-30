@@ -1,0 +1,129 @@
+.resume {
+    padding-top: 120px;
+
+    &__title {
+        position: relative;
+
+        text-align: center;
+
+        @include before_circle;
+
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+    }
+
+    &__wrapper {
+        padding: 60px 65px 0;
+
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        grid-column-gap: 136px;
+    }
+
+    &__column {
+        &-title {
+            padding-left: 35px;
+
+            position: relative;
+
+            &:before {
+                position: absolute;
+                left: -15px;
+                top: 50%;
+                z-index: 10;
+                transform: translateY(-50%);
+
+                content: "";
+                width: 15px;
+                height: 15px;
+                background: $main-color;
+                border-radius: 100%;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 35px;
+
+            li {
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    top: -8px;
+                    left: -43px;
+                    z-index: 5;
+                    background-color: #000;
+
+                    content: "";
+                    width: 1px;
+                    height: calc(100% + 5px);
+                }
+            }
+        }
+    }
+
+    &__item {
+        padding-top: 45px;
+
+        &-head {
+            position: relative;
+            padding-left: 56px;
+
+            &:before {
+                position: absolute;
+                top: 50%;
+                left: -42px;
+                z-index: 5;
+                transform: translateY(-1px);
+
+                content: "";
+                height: 1px;
+                width: 11%;
+                background-color: #000;
+            }
+        }
+
+        &-icon {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-18px);
+            
+            @include before_circle;
+
+            &:before {
+                top: 0;
+                z-index: 10;
+            }
+
+            img {
+                position: absolute;
+                z-index: 15;
+
+                top: 14px;
+                left: 18px;
+            }
+        }
+
+        &-subtitle {
+            font-size: 12px;
+            line-height: 18px;
+            color: #000;
+        }
+
+        &-text {
+            margin-top: 12px;
+
+            font-size: 12px;
+            line-height: 18px;
+            color: #000;
+        }
+    }
+}

@@ -10,14 +10,27 @@
     padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
 .container {
     margin: 0 auto;
-    
+
     width: 1140px;
+}
+
+.divider {
+    height: 3px;
+    width: 60px;
+
+    background-color: $main-color;
+    margin: 25px auto 0 auto;
 }
 
 @import 'blocks/promo';
@@ -26,4 +39,4 @@ h1, h2, h3, h4, h5, h6 {
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
 @import 'blocks/about-me';
-@import 'blocks/experience';
+@import 'blocks/resume';
