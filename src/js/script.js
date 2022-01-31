@@ -1,4 +1,5 @@
-const hamburger = document.querySelector('.hamburger'),
+const
+    hamburger = document.querySelector('.hamburger'),
     menu = document.querySelector('.menu'),
     menuClose = document.querySelector('.menu__close'),
     menuOverlay = document.querySelector('.menu__overlay');
@@ -13,4 +14,15 @@ menuClose.addEventListener('click', () => {
 
 menuOverlay.addEventListener('click', () => {
     menu.classList.remove('active');
+});
+
+
+// scales
+
+const
+    counters = document.querySelectorAll('.scales__item-counter'),
+    scales = document.querySelectorAll('.scales__item-progress-front');
+
+counters.forEach((item, i) => {
+    scales[i].style = `width:${item.innerHTML}`;
 });
