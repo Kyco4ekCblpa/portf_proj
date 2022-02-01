@@ -21,4 +21,20 @@
     &_fz48 {
         font-size: 48px;
     }
+
+    &_section-ttl {
+        position: relative;
+        text-align: center;
+
+        @include before_circle;
+
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &_section-sttl {
+        text-align: center;
+    }
 }
