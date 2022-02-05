@@ -45,7 +45,7 @@
 
 .task-types {
     display: grid;
-    grid-template: repeat(2, 116px) / repeat(2, 260px);
+    grid-template: repeat(2, minmax(116px, max-content)) / repeat(2, 260px);
     grid-column-gap: 50px;
     grid-row-gap: 40px;
 
